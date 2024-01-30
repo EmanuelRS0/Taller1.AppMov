@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    position: relative; /* Establecer un contexto de posición para el campo de contraseña */
+}
+
+#passwordInput {
+    position: absolute; /* Posicionamiento absoluto */
+    top: -50px; /* Ajustar la posición vertical */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    background-color: #eee;
+}
+
+
